@@ -36,13 +36,13 @@ const FeaturedImages = () => {
           {/* Desktop Nav Buttons */}
           <button
             onClick={prev}
-            className="hidden md:flex absolute -left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="hidden md:flex absolute -left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full border border-gray-300 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             <Icon icon="mdi:chevron-left" className="text-[24px]" />
           </button>
           <button
             onClick={next}
-            className="hidden md:flex absolute -right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="hidden md:flex absolute -right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full border border-gray-300 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             <Icon icon="mdi:chevron-right" className="text-[24px]" />
           </button>
@@ -74,13 +74,13 @@ const FeaturedImages = () => {
           <div className="flex md:hidden justify-center gap-4 mt-6">
             <button
               onClick={prev}
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <Icon icon="mdi:chevron-left" className="text-[24px]" />
             </button>
             <button
               onClick={next}
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               <Icon icon="mdi:chevron-right" className="text-[24px]" />
             </button>

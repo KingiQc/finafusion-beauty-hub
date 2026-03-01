@@ -45,7 +45,7 @@ const BookAppointment = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
-              className="bg-card border border-primary rounded-lg p-6"
+              className="bg-card border border-gray-300 rounded-lg p-8 md:p-10"
             >
               <Icon icon={p.icon} className="text-[36px] text-primary mb-3" />
               <h3 className="text-primary font-semibold text-lg mb-2">{p.title}</h3>
@@ -57,23 +57,23 @@ const BookAppointment = () => {
 
       {/* Booking Form */}
       <div className="max-w-3xl mx-auto px-6">
-        <form onSubmit={handleSubmit} className="bg-card border border-primary rounded-lg p-8 md:p-12 space-y-6">
+        <form onSubmit={handleSubmit} className="bg-card border border-gray-300 rounded-lg p-8 md:p-12 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-primary text-min font-medium mb-2">Full Name</label>
-              <input name="fullName" value={formData.fullName} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="fullName" value={formData.fullName} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Email</label>
-              <input name="email" type="email" value={formData.email} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="email" type="email" value={formData.email} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Phone</label>
-              <input name="phone" type="tel" value={formData.phone} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="phone" type="tel" value={formData.phone} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Type of Makeup Session</label>
-              <select name="sessionType" value={formData.sessionType} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
+              <select name="sessionType" value={formData.sessionType} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
                 <option value="">Select session type</option>
                 <option value="bridal">Bridal Makeup</option>
                 <option value="event">Event Makeup</option>
@@ -88,7 +88,7 @@ const BookAppointment = () => {
               <label className="block text-primary text-min font-medium mb-2">Booking Date</label>
               <Popover>
                 <PopoverTrigger asChild>
-                  <button type="button" className={cn("w-full border border-primary rounded-lg px-4 py-3 text-min text-left bg-background flex items-center gap-2", !date && "text-primary/50")}>
+                  <button type="button" className={cn("w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-left bg-background flex items-center gap-2", !date && "text-primary/50")}>
                     <Icon icon="mdi:calendar" className="text-primary text-[20px]" />
                     {date ? format(date, "PPP") : "Pick a date"}
                   </button>
@@ -100,13 +100,13 @@ const BookAppointment = () => {
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Booking Time</label>
-              <input name="time" type="time" value={formData.time} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="time" type="time" value={formData.time} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
           </div>
 
           <div>
             <label className="block text-primary text-min font-medium mb-2">Location</label>
-            <select name="location" value={formData.location} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
+            <select name="location" value={formData.location} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
               <option value="">Select location</option>
               <option value="studio">Studio</option>
               <option value="outdoor">Outdoor</option>
@@ -116,7 +116,7 @@ const BookAppointment = () => {
 
           <div>
             <label className="block text-primary text-min font-medium mb-2">Additional Notes (Optional)</label>
-            <textarea name="notes" value={formData.notes} onChange={handleChange} rows={4} className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none" />
+            <textarea name="notes" value={formData.notes} onChange={handleChange} rows={4} className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none" />
           </div>
 
           <div className="flex items-start gap-3">

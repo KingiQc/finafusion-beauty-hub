@@ -31,7 +31,7 @@ const ServiceTypes = () => {
           {services.map((s) => (
             <div
               key={s.title}
-              className="bg-background border border-primary rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300"
+              className="bg-background border border-gray-300 rounded-lg p-10 md:p-12 text-center hover:shadow-lg transition-shadow duration-300"
             >
               <Icon icon={s.icon} className="text-[48px] text-primary mx-auto mb-4" />
               <h3 className="text-primary font-semibold text-lg mb-3">{s.title}</h3>

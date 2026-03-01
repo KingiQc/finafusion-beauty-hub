@@ -59,7 +59,7 @@ const Testimonials = () => {
               {testimonials.slice(startIndex, startIndex + visibleCount).map((t, i) => (
                 <div
                   key={i}
-                  className="relative bg-background border border-primary rounded-lg p-8"
+                  className="relative bg-background border border-gray-300 rounded-lg p-10 md:p-12"
                 >
                   {/* Quotation mark */}
                   <Icon
@@ -96,13 +96,13 @@ const Testimonials = () => {
         <div className="flex justify-center gap-4 mt-8">
           <button
             onClick={prev}
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             <Icon icon="mdi:chevron-left" className="text-[24px]" />
           </button>
           <button
             onClick={next}
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             <Icon icon="mdi:chevron-right" className="text-[24px]" />
           </button>

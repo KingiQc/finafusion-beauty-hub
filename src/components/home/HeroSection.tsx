@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[70vh] overflow-hidden">
+    <section className="relative w-full h-[70vh] overflow-hidden mt-4">
       <img
         src="/images/hero-bg.jpg"
         alt="Professional makeup artistry by FinaFusion"

@@ -97,7 +97,7 @@ const Training = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2, duration: 0.5 }}
-              className="relative bg-card border border-primary rounded-xl p-8"
+              className="relative bg-card border border-gray-300 rounded-xl p-10 md:p-12"
             >
               {course.popular && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-medium">
@@ -125,7 +125,7 @@ const Training = () => {
 
       {/* Agreement Cards */}
       <div className="max-w-3xl mx-auto px-6 mb-16">
-        <div className="bg-card border border-primary rounded-lg p-8">
+        <div className="bg-card border border-gray-300 rounded-lg p-8">
           <h3 className="text-primary font-semibold text-lg mb-4">Training Agreement</h3>
           <ul className="space-y-3">
             {agreementItems.map((item) => (
@@ -141,23 +141,23 @@ const Training = () => {
       {/* Registration Form */}
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-primary text-xl font-semibold mb-6 text-center">Register for Training</h2>
-        <form onSubmit={handleSubmit} className="bg-card border border-primary rounded-lg p-8 md:p-12 space-y-6">
+        <form onSubmit={handleSubmit} className="bg-card border border-gray-300 rounded-lg p-8 md:p-12 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-primary text-min font-medium mb-2">Full Name</label>
-              <input name="fullName" value={formData.fullName} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="fullName" value={formData.fullName} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Email</label>
-              <input name="email" type="email" value={formData.email} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="email" type="email" value={formData.email} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Phone</label>
-              <input name="phone" type="tel" value={formData.phone} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input name="phone" type="tel" value={formData.phone} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
             </div>
             <div>
               <label className="block text-primary text-min font-medium mb-2">Select a Program</label>
-              <select name="program" value={formData.program} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
+              <select name="program" value={formData.program} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
                 <option value="">Select program</option>
                 <option value="beginner">Beginner Masterclass</option>
                 <option value="advanced">Advanced Glam Course</option>
@@ -168,7 +168,7 @@ const Training = () => {
 
           <div>
             <label className="block text-primary text-min font-medium mb-2">Experience Level</label>
-            <select name="experience" value={formData.experience} onChange={handleChange} required className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
+            <select name="experience" value={formData.experience} onChange={handleChange} required className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary">
               <option value="">Select level</option>
               <option value="none">No experience</option>
               <option value="beginner">Beginner</option>
@@ -179,7 +179,7 @@ const Training = () => {
 
           <div>
             <label className="block text-primary text-min font-medium mb-2">Additional Information (Optional)</label>
-            <textarea name="info" value={formData.info} onChange={handleChange} rows={4} className="w-full border border-primary rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none" />
+            <textarea name="info" value={formData.info} onChange={handleChange} rows={4} className="w-full border border-gray-300 rounded-lg px-4 py-3 text-min text-primary bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none" />
           </div>
 
           <div className="flex items-start gap-3">

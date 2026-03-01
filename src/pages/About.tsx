@@ -43,7 +43,7 @@ const About = () => {
 
       {/* Social Media Scrolling */}
       <section className="mb-20 overflow-hidden">
-        <div className="border-y border-primary py-4">
+        <div className="border-y border-gray-300 py-4">
           <div className="flex animate-marquee whitespace-nowrap">
             {[...Array(4)].map((_, rep) => (
               <div key={rep} className="flex items-center gap-12 px-8">
@@ -68,7 +68,7 @@ const About = () => {
       {/* Map Section */}
       <section className="max-w-4xl mx-auto px-6">
         <h2 className="text-primary text-xl font-semibold mb-6 text-center">Our Studio Location</h2>
-        <div className="relative rounded-lg overflow-hidden border border-primary">
+        <div className="relative rounded-lg overflow-hidden border border-gray-300">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7!2d3.5!3d6.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjQnMDAuMCJOIDPCsDMwJzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
             width="100%"
@@ -83,7 +83,7 @@ const About = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <button
                 onClick={() => setMapRevealed(true)}
-                className="bg-transparent border border-primary text-primary px-6 py-3 rounded-lg text-min font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="bg-transparent border border-gray-300 text-primary px-6 py-3 rounded-lg text-min font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 View Map
               </button>

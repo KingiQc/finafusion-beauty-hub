@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 w-full flex justify-center px-4 py-3">
-        <div className="w-full max-w-7xl bg-navbar border border-primary rounded-full px-6 py-4 flex items-center justify-between">
+        <div className="w-full max-w-7xl bg-navbar border border-gray-300 rounded-full px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="text-primary font-semibold text-lg tracking-wide">
             FinaFusion

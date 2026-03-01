@@ -38,7 +38,7 @@ const Services = () => {
 
       {/* Filter Tabs */}
       <div className="flex justify-center mb-12 px-6">
-        <div className="inline-flex bg-navbar border border-primary rounded-full p-1">
+        <div className="inline-flex bg-navbar border border-gray-300 rounded-full p-1">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -67,7 +67,7 @@ const Services = () => {
           {serviceData[active].map((s) => (
             <div
               key={s.title}
-              className="bg-card border border-primary rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
+              className="bg-card border border-gray-300 rounded-lg p-10 md:p-12 hover:shadow-lg transition-shadow duration-300"
             >
               <Icon icon={s.icon} className="text-[40px] text-primary mb-4" />
               <h3 className="text-primary font-semibold text-lg mb-2">{s.title}</h3>
